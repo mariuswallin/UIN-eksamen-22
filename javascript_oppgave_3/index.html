@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oppgave 3</title>
+  </head>
+  <body>
+    <!-- Skal kun legge til css-klasser (hvis behov) -->
+    <main>
+      <div>
+        <nav>
+          <ul>
+            <!-- Flytt active klassen med JavaScript for å vise hvilket steg man er på (styling må lages selv) -->
+            <li class="step active">1</li>
+            <li class="step">2</li>
+            <li class="step">3</li>
+          </ul>
+        </nav>
+        <form method="POST" action="#" novalidate>
+          <!-- Bruk hidden attr til å skjule / vise riktig steg -->
+          <section id="step_one">
+            <label for="name">
+              Navn
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Fyll inn navn"
+              />
+              <!-- Bruk hidden attr til å skjule / vise error -->
+              <span hidden class="error">Feil</span>
+            </label>
+          </section>
+          <!-- Bruk hidden attr til å skjule / vise riktig steg -->
+          <section id="step_two" hidden>
+            <label for="email">
+              Email
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Fyll inn epost"
+              />
+              <!-- Bruk hidden attr til å skjule / vise error -->
+              <span hidden class="error">Feil</span>
+            </label>
+          </section>
+          <!-- Bruk hidden attr til å skjule / vise riktig steg -->
+          <section id="step_three" hidden>
+            <label for="age">
+              Alder
+              <input
+                id="age"
+                name="age"
+                type="number"
+                placeholder="Fyll inn alder"
+              />
+              <!-- Bruk hidden attr til å skjule / vise error -->
+              <span hidden class="error">Feil</span>
+            </label>
+          </section>
+          <!-- Fjern hidden attr for å vise send når vi er på steg 3 -->
+          <button hidden type="submit" id="send">Send</button>
+        </form>
+        <div id="buttons">
+          <!-- Fjern hidden attr på #prev når vi ikke er på steg 1 -->
+          <button hidden type="button" id="prev">Forrige</button>
+          <!-- Legg til hidden attr på #next når vi er på steg 3 -->
+          <button type="button" id="next">Neste</button>
+        </div>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

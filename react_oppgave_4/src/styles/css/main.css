@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --green: rgb(25, 232, 168);
+  --purple: rgb(198, 165, 230);
+  --blue: rgb(125, 227, 240);
+  --red: rgb(226, 101, 91);
+  --input: rgb(244, 244, 244);
+  --input-border: rgb(211, 211, 211);
+  --grey: rgb(183, 183, 183);
+  --text: rgb(41, 41, 41);
+  --box-border: rgb(23, 23, 23);
+  --box-border-width: 3px;
+  --box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16);
+  --background: rgb(34, 114, 139);
+  --white: #ffffff;
+}
+
+.green span {
+  background-color: var(--green)
+}
+
+.grey span {
+  background-color: var(--grey)
+}
+
+.blue span {
+  background-color: var(--blue)
+}
+
+.red span {
+  background-color: var(--red)
+}
+
+.purple span {
+  background-color: var(--purple)
+}

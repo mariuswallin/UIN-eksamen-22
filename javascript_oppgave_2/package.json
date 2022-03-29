@@ -1,0 +1,19 @@
+{
+  "name": "my-vue-app",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test:run": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^8.11.3",
+    "@vitest/ui": "^0.7.0",
+    "jsdom": "^19.0.0",
+    "sass": "^1.49.9",
+    "vite": "^2.8.0",
+    "vitest": "^0.7.0"
+  }
+}
